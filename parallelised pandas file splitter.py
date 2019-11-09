@@ -3,6 +3,8 @@ import os
 from multiprocessing import Pool
 from multiprocessing.pool import ThreadPool
 
+column_names = []
+output_file_path = 'some/file/path'
 
 def file_writer(chunk):
     chunk.columns = column_names
